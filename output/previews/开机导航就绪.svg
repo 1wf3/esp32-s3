@@ -1,0 +1,24 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 320' width='960' height='640'>
+<rect x='0' y='0' width='480' height='320' rx='0' fill='#000408'/>
+<path d='M-20,30 L190,130' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M105,-20 L58,80' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M58,80 L-12,192' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M151,-20 L111,39' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M150,111 L48,276' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M135,139 L225,191' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M296,-20 L385,320' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M311,88 L490,22' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M345,197 L491,137' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M407,-15 L495,213' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M257,228 L279,320' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M257,228 L416,169' fill='none' stroke='#182431' stroke-width='7' stroke-linecap='round'/>
+<path d='M240,0 L240,159' fill='none' stroke='#6aceff' stroke-width='8' stroke-linecap='round'/>
+<rect x='121' y='215' width='238' height='48' rx='8' fill='#000408'/>
+<text x='176' y='250' font-family='Microsoft YaHei,Arial,sans-serif' font-size='32' fill='#f6faff'>即刻出发</text>
+<path d='M240,134 L219,182 L240,172 Z' fill='#00a1ff'/>
+<path d='M240,134 L240,172 L261,182 Z' fill='#00a1ff'/>
+<path d='M240,138 L222,179 L240,171 Z' fill='#f6faff'/>
+<path d='M240,138 L240,171 L258,179 Z' fill='#f6faff'/>
+<rect x='140' y='283' width='200' height='5' rx='2' fill='#182431'/>
+<rect x='140' y='283' width='175' height='5' rx='2' fill='#6aceff'/>
+</svg>

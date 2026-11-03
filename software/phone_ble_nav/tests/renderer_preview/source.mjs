@@ -1,0 +1,10 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {transformVectorTile} from '../../../phone_gateway/backend/src/map-tiles.js';
+const tile=transformVectorTile(await readFile('software/phone_gateway/backend/fixtures/protomaps-jinan-15-27044-12791.mvt'),{z:15,x:27044,y:12791,revision:'verified-jinan-fixture'});
+const fixture=JSON.parse(await readFile('build/board_ble_fixture.json'));
+const geometry=fixture.find(x=>x.label==='DEMO route 120');
+const b=Buffer.from(geometry.payload,'hex');const lat=b.readInt32LE(18)/1e6,lon=b.readInt32LE(22)/1e6;
+const lines=[`${lon} ${lat}`,...tile.roads.map(r=>`${['motorway','primary','secondary','residential','service'].indexOf(r.class)<0?5:['motorway','primary','secondary','residential','service'].indexOf(r.class)} ${r.points_e6.map(p=>`${p[1]/1e6} ${p[0]/1e6}`).join(' ')}`)];
+await writeFile('build/renderer_preview/roads.txt',lines.join('\n'));
+await writeFile('build/renderer_preview/navigation.txt',`${0x11} ${geometry.payload}\n${0x10} ${fixture.find(x=>x.label==='DEMO navigation 120').payload}\n`);
+console.log(`Real source tile: ${tile.roads.length} road segments`);

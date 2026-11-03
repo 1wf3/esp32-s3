@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1191" height="842" viewBox="0 0 1191 842">
+<rect x="0" y="0" width="1191" height="842" rx="0" fill="#f7f8f3" stroke="#f7f8f3"/>
+<text x="34" y="43.25" fill="#19332e" font-size="25" font-family="Microsoft YaHei, sans-serif">03 / PCB 布局建议与嘉立创 EDA 操作</text>
+<text x="35" y="69.35" fill="#65766e" font-size="11" font-family="Microsoft YaHei, sans-serif">双面 FR-4 底板；下面是位置关系示意，不是按比例的封装或可直接生产的 PCB。</text>
+<path d="M34,83 L1157,83" stroke="#287660" stroke-width="2" fill="none"/>
+<text x="35" y="822.65" fill="#65766e" font-size="9" font-family="Microsoft YaHei, sans-serif">电动车导航 / 2026-10-19 / V0.1 电气设计草案；封装未冻结，不可据此直接下单 PCB</text>
+<text x="1080" y="823.5" fill="#65766e" font-size="10" font-family="Microsoft YaHei, sans-serif">3 / 4</text>
+<rect x="42" y="128" width="575" height="409" rx="12" fill="#edf3e8" stroke="#287660"/>
+<rect x="66" y="145" width="160" height="77" rx="4" fill="#fff1d6" stroke="#a9620c"/>
+<text x="76" y="168.05" fill="#19332e" font-size="13" font-family="Microsoft YaHei, sans-serif">ESP32 蓝牙天线端</text>
+<text x="76" y="191.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">优先伸出底板边缘</text>
+<text x="76" y="209.5" fill="#a9620c" font-size="10" font-family="Microsoft YaHei, sans-serif">下方 / 周围禁铜、禁金属</text>
+<rect x="67" y="233" width="162" height="230" rx="6" fill="#ffffff" stroke="#287660"/>
+<text x="82" y="257.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">U1 开发板插接区</text>
+<text x="82" y="279.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">两侧 J1A / J1B 排母</text>
+<text x="82" y="301.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif"></text>
+<text x="82" y="323.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">N = 每排针数：待测</text>
+<text x="82" y="345.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">P = 针间距：待测</text>
+<text x="82" y="367.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">D = 两排中心距：待测</text>
+<text x="82" y="389.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif"></text>
+<text x="82" y="411.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">USB 插头朝板边</text>
+<text x="82" y="433.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">USB / BOOT / RST</text>
+<text x="82" y="455.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">保留操作空间</text>
+<rect x="257" y="248" width="115" height="64" rx="5" fill="#ffffff" stroke="#2167aa"/>
+<text x="268" y="266.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">R1/R2 串联电阻</text>
+<text x="268" y="282.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">紧邻 GPIO 输出</text>
+<text x="268" y="298.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">走线短且有地回流</text>
+<rect x="406" y="235" width="180" height="92" rx="5" fill="#ffffff" stroke="#287660"/>
+<text x="419" y="256.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">J2 屏幕接口</text>
+<text x="419" y="273.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">C3/C4 紧邻电源脚</text>
+<text x="419" y="290.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">屏幕排线尽量 ≤ 50 mm</text>
+<text x="419" y="307.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">R6 靠 SDO 来源端</text>
+<rect x="405" y="356" width="180" height="63" rx="5" fill="#ffffff" stroke="#287660"/>
+<text x="419" y="374.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">J3 GPS 接口</text>
+<text x="419" y="389.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">C5/C6 靠接口</text>
+<text x="419" y="404.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">GPS / 天线远离 SCK</text>
+<rect x="258" y="436" width="325" height="74" rx="5" fill="#ffffff" stroke="#287660"/>
+<text x="272" y="455.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">JP1 + TP1 / TP2 / TP3 / TP4</text>
+<text x="272" y="473.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">JP1：外设总电源断开 / 测流</text>
+<text x="272" y="491.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">不要把外部 3.3 V 接入本电源网</text>
+<circle cx="53" cy="139" r="4" fill="none" stroke="#65766e"/>
+<circle cx="604" cy="139" r="4" fill="none" stroke="#65766e"/>
+<circle cx="53" cy="524" r="4" fill="none" stroke="#65766e"/>
+<circle cx="604" cy="524" r="4" fill="none" stroke="#65766e"/>
+<text x="60" y="556.5" fill="#65766e" font-size="10" font-family="Microsoft YaHei, sans-serif">四个安装孔位置随屏幕 / 外壳确定；示意孔不代表实际孔距。</text>
+<text x="656" y="123.75" fill="#287660" font-size="15" font-family="Microsoft YaHei, sans-serif">画板前必须量出的机械数据</text>
+<text x="657" y="151.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">① 开发板：每排针数、针间距、两排中心距。</text>
+<text x="657" y="178.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">② 开发板：正反面丝印与两排各脚的实际顺序。</text>
+<text x="657" y="205.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">③ 屏幕：连接器针数 / 间距 / 丝印顺序、安装孔距。</text>
+<text x="657" y="232.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">④ 外形：开发板长宽、屏幕 PCB 外形、元件高度。</text>
+<text x="657" y="259.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">⑤ USB：插头外廓与插拔空间；天线朝向及净空。</text>
+<text x="657" y="286.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">⑥ GPS：接口丝印、模块尺寸和天线固定位置。</text>
+<text x="656" y="348.75" fill="#287660" font-size="15" font-family="Microsoft YaHei, sans-serif">在嘉立创 EDA 中按这个顺序绘制</text>
+<text x="657" y="376.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">1. 新建原理图：先建 J1A/J1B、J2/J3、JP1。</text>
+<text x="657" y="401.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">2. 开发板排母必须按实物逐脚编号，再加网络标签。</text>
+<text x="657" y="426.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">3. 按第 1 页补电阻、电容和测试点，第 2 页核对针序。</text>
+<text x="657" y="451.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">4. 所选连接器的原理图脚号必须对应 PCB 焊盘号。</text>
+<text x="657" y="476.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">5. J3-4、其余未用引脚加未连接标记；J4 默认 DNP。</text>
+<text x="657" y="501.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">6. 运行 ERC，再按真实尺寸关联封装、转到 PCB。</text>
+<text x="657" y="526.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">7. 先定外形 / 孔 / USB / 天线，再布电源和短 SPI。</text>
+<text x="657" y="551.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">8. 地铺铜后跑 DRC；打印 1:1 纸样套实物检查。</text>
+<text x="40" y="610.75" fill="#287660" font-size="15" font-family="Microsoft YaHei, sans-serif">布线起点（工程建议，需用实际板材 / 负载复核）</text>
+<text x="41" y="638.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">• 2 层、FR-4 1.6 mm、1 oz；信号宽约 0.25 mm，起步间距 0.25 mm，3.3 V 主干约 0.8 mm。</text>
+<text x="41" y="663.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">• 底层尽量连续 GND，SPI 下方不要开槽 / 切地；SCK 先走短，避免长支路与绕大圈。</text>
+<text x="41" y="688.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">• MCU 到 J2 的 PCB 走线目标 ≤ 30 mm；若排线较长或 40 MHz 花屏，先缩短线并降速实测。</text>
+<text x="41" y="713.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">• 天线区按对应 ESP32 模块手册留空；GPS 陶瓷面朝上，远离显示屏、时钟线和金属遮挡。</text>
+<text x="41" y="738.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">• M3 安装孔可先预留 Ø3.2 mm 非金属化孔，螺帽 / 垫圈周边禁放铜和器件；孔距以外壳为准。</text>
+<text x="41" y="763.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">• 用有锁扣或防呆接头、螺柱和应力释放固定线束；底板不能仅靠排母悬挂屏幕重量。</text>
+</svg>

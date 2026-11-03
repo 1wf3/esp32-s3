@@ -1,0 +1,43 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 320' width='960' height='640'>
+<rect x='0' y='0' width='480' height='320' rx='0' fill='#000408'/>
+<path d='M22,13 L22,31' fill='none' stroke='#00a1ff' stroke-width='2' stroke-linecap='round'/>
+<path d='M22,13 L28,17' fill='none' stroke='#00a1ff' stroke-width='2' stroke-linecap='round'/>
+<path d='M28,17 L16,26' fill='none' stroke='#00a1ff' stroke-width='2' stroke-linecap='round'/>
+<path d='M16,17 L28,26' fill='none' stroke='#00a1ff' stroke-width='2' stroke-linecap='round'/>
+<path d='M28,26 L22,31' fill='none' stroke='#00a1ff' stroke-width='2' stroke-linecap='round'/>
+<text x='36' y='28' font-family='Microsoft YaHei,Arial,sans-serif' font-size='16' fill='#9caaac'>蓝牙待连接</text>
+<circle cx='456' cy='22' r='4' fill='#00a1ff'/>
+<rect x='151' y='59' width='36' height='63' rx='6' fill='none' stroke='#f6faff'/>
+<rect x='152' y='60' width='34' height='61' rx='5' fill='none' stroke='#f6faff'/>
+<rect x='162' y='65' width='14' height='2' rx='1' fill='#f6faff'/>
+<circle cx='169' cy='91' r='3' fill='#f6faff'/>
+<rect x='251' y='67' width='92' height='51' rx='7' fill='none' stroke='#6aceff'/>
+<rect x='252' y='68' width='90' height='49' rx='6' fill='none' stroke='#6aceff'/>
+<rect x='257' y='73' width='80' height='39' rx='3' fill='none' stroke='#6aceff'/>
+<path d='M297,81 L288,102 L297,98 Z' fill='#6aceff'/>
+<path d='M297,81 L297,98 L306,102 Z' fill='#6aceff'/>
+<path d='M297,85 L291,100 L297,97 Z' fill='#f6faff'/>
+<path d='M297,85 L297,97 L303,100 Z' fill='#f6faff'/>
+<rect x='198' y='81' width='46' height='22' rx='0' fill='#000408'/>
+<circle cx='207' cy='92' r='3' fill='#0079b4'/>
+<circle cx='221' cy='92' r='3' fill='#0095e6'/>
+<circle cx='235' cy='92' r='3' fill='#009df6'/>
+<text x='144' y='171' font-family='Microsoft YaHei,Arial,sans-serif' font-size='32' fill='#f6faff'>等待手机连接</text>
+<text x='136' y='199' font-family='Microsoft YaHei,Arial,sans-serif' font-size='16' fill='#9caaac'>打开手机 App，选择下方设备</text>
+<rect x='124' y='215' width='232' height='53' rx='8' fill='none' stroke='#414c52'/>
+<path d='M151,227 L151,255' fill='none' stroke='#00a1ff' stroke-width='2' stroke-linecap='round'/>
+<path d='M151,227 L160,234' fill='none' stroke='#00a1ff' stroke-width='2' stroke-linecap='round'/>
+<path d='M160,234 L142,248' fill='none' stroke='#00a1ff' stroke-width='2' stroke-linecap='round'/>
+<path d='M142,234 L160,248' fill='none' stroke='#00a1ff' stroke-width='2' stroke-linecap='round'/>
+<path d='M160,248 L151,255' fill='none' stroke='#00a1ff' stroke-width='2' stroke-linecap='round'/>
+<text x='176' y='236' font-family='Microsoft YaHei,Arial,sans-serif' font-size='16' fill='#f6faff'>MOTO GPS TFT</text>
+<text x='176' y='260' font-family='Microsoft YaHei,Arial,sans-serif' font-size='16' fill='#9caaac'>设备名称</text>
+<path d='M18,283 L462,283' fill='none' stroke='#314041' stroke-width='1' stroke-linecap='round'/>
+<circle cx='46' cy='302' r='8' fill='none' stroke='#f6faff'/>
+<text x='44' y='305' font-family='Microsoft YaHei,Arial,sans-serif' font-size='8' fill='#f6faff'>1</text>
+<text x='62' y='308' font-family='Microsoft YaHei,Arial,sans-serif' font-size='16' fill='#f6faff'>开启手机蓝牙</text>
+<path d='M237,293 L237,311' fill='none' stroke='#414c52' stroke-width='1' stroke-linecap='round'/>
+<circle cx='268' cy='302' r='8' fill='none' stroke='#f6faff'/>
+<text x='266' y='305' font-family='Microsoft YaHei,Arial,sans-serif' font-size='8' fill='#f6faff'>2</text>
+<text x='284' y='308' font-family='Microsoft YaHei,Arial,sans-serif' font-size='16' fill='#f6faff'>在 App 中连接</text>
+</svg>

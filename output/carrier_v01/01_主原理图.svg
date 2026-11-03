@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1191" height="842" viewBox="0 0 1191 842">
+<rect x="0" y="0" width="1191" height="842" rx="0" fill="#f7f8f3" stroke="#f7f8f3"/>
+<text x="34" y="43.25" fill="#19332e" font-size="25" font-family="Microsoft YaHei, sans-serif">01 / 主原理图：现有开发板 + 屏幕 + GPS</text>
+<text x="35" y="69.35" fill="#65766e" font-size="11" font-family="Microsoft YaHei, sans-serif">保留现有 USB 供电；GPIO 与当前 phone_ble_nav.ino 一致。U1 仅按信号名表示，物理排针序号必须实测。</text>
+<path d="M34,83 L1157,83" stroke="#287660" stroke-width="2" fill="none"/>
+<text x="35" y="822.65" fill="#65766e" font-size="9" font-family="Microsoft YaHei, sans-serif">电动车导航 / 2026-10-19 / V0.1 电气设计草案；封装未冻结，不可据此直接下单 PCB</text>
+<text x="1080" y="823.5" fill="#65766e" font-size="10" font-family="Microsoft YaHei, sans-serif">1 / 4</text>
+<rect x="34" y="98" width="1123" height="177" rx="8" fill="#fffdf7" stroke="#d7dfd1"/>
+<text x="49" y="121.75" fill="#287660" font-size="15" font-family="Microsoft YaHei, sans-serif">电源：只从开发板现有 USB 口输入</text>
+<rect x="49" y="143" width="262" height="74" rx="6" fill="#ffffff" stroke="#287660"/>
+<text x="61" y="163.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">充电宝 5 V USB → 开发板 USB</text>
+<text x="61" y="182.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">U1 板载稳压 → DEV_3V3</text>
+<text x="61" y="201.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">开发板 5V / VIN / USB 信号不接到底板</text>
+<path d="M311,171 L360,171" stroke="#bf413b" stroke-width="1" fill="none"/>
+<circle cx="360" cy="171" r="2.4" fill="#bf413b"/>
+<circle cx="384" cy="171" r="2.4" fill="#bf413b"/>
+<path d="M384,171 L1126,171" stroke="#bf413b" stroke-width="1" fill="none"/>
+<path d="M360,171 L360,163" stroke="#bf413b" stroke-width="1" fill="none"/>
+<path d="M360,163 L384,163" stroke="#bf413b" stroke-width="3" fill="none"/>
+<path d="M384,163 L384,171" stroke="#bf413b" stroke-width="1" fill="none"/>
+<text x="345" y="148.5" fill="#bf413b" font-size="10" font-family="Microsoft YaHei, sans-serif">JP1 短路帽</text>
+<circle cx="323" cy="171" r="2.4" fill="#bf413b"/>
+<path d="M323,171 L323,222" stroke="#bf413b" stroke-width="1" fill="none"/>
+<text x="308" y="237.65" fill="#19332e" font-size="9" font-family="Microsoft YaHei, sans-serif">TP1</text>
+<circle cx="423" cy="171" r="2.4" fill="#bf413b"/>
+<path d="M423,171 L423,222" stroke="#bf413b" stroke-width="1" fill="none"/>
+<text x="408" y="237.65" fill="#19332e" font-size="9" font-family="Microsoft YaHei, sans-serif">TP2</text>
+<circle cx="1126" cy="208" r="2.4" fill="#19332e"/>
+<path d="M1126,208 L1126,215" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M1118,215 L1134,215" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M1121,219 L1131,219" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M1124,223 L1128,223" stroke="#19332e" stroke-width="1" fill="none"/>
+<text x="1109" y="242.65" fill="#19332e" font-size="9" font-family="Microsoft YaHei, sans-serif">TP3</text>
+<text x="432" y="151.35" fill="#bf413b" font-size="11" font-family="Microsoft YaHei, sans-serif">+3V3_PERIPH（JP1 可拔下测外设总电流）</text>
+<circle cx="470" cy="171" r="2.4" fill="#bf413b"/>
+<path d="M470,171 L470,187" stroke="#bf413b" stroke-width="1" fill="none"/>
+<path d="M461,187 L479,187" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M461,193 L479,193" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M470,193 L470,211" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M470,211 L470,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M462,218 L478,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M465,222 L475,222" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M468,226 L472,226" stroke="#19332e" stroke-width="1" fill="none"/>
+<text x="445" y="240.65" fill="#19332e" font-size="9" font-family="Microsoft YaHei, sans-serif">C1 10uF</text>
+<circle cx="550" cy="171" r="2.4" fill="#bf413b"/>
+<path d="M550,171 L550,187" stroke="#bf413b" stroke-width="1" fill="none"/>
+<path d="M541,187 L559,187" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M541,193 L559,193" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M550,193 L550,211" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M550,211 L550,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M542,218 L558,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M545,222 L555,222" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M548,226 L552,226" stroke="#19332e" stroke-width="1" fill="none"/>
+<text x="525" y="240.65" fill="#19332e" font-size="9" font-family="Microsoft YaHei, sans-serif">C2 100nF</text>
+<circle cx="690" cy="171" r="2.4" fill="#bf413b"/>
+<path d="M690,171 L690,187" stroke="#bf413b" stroke-width="1" fill="none"/>
+<path d="M681,187 L699,187" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M681,193 L699,193" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M690,193 L690,211" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M690,211 L690,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M682,218 L698,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M685,222 L695,222" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M688,226 L692,226" stroke="#19332e" stroke-width="1" fill="none"/>
+<text x="665" y="240.65" fill="#19332e" font-size="9" font-family="Microsoft YaHei, sans-serif">C3 10uF</text>
+<circle cx="770" cy="171" r="2.4" fill="#bf413b"/>
+<path d="M770,171 L770,187" stroke="#bf413b" stroke-width="1" fill="none"/>
+<path d="M761,187 L779,187" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M761,193 L779,193" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M770,193 L770,211" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M770,211 L770,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M762,218 L778,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M765,222 L775,222" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M768,226 L772,226" stroke="#19332e" stroke-width="1" fill="none"/>
+<text x="745" y="240.65" fill="#19332e" font-size="9" font-family="Microsoft YaHei, sans-serif">C4 100nF</text>
+<circle cx="950" cy="171" r="2.4" fill="#bf413b"/>
+<path d="M950,171 L950,187" stroke="#bf413b" stroke-width="1" fill="none"/>
+<path d="M941,187 L959,187" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M941,193 L959,193" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M950,193 L950,211" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M950,211 L950,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M942,218 L958,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M945,222 L955,222" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M948,226 L952,226" stroke="#19332e" stroke-width="1" fill="none"/>
+<text x="925" y="240.65" fill="#19332e" font-size="9" font-family="Microsoft YaHei, sans-serif">C5 10uF</text>
+<circle cx="1030" cy="171" r="2.4" fill="#bf413b"/>
+<path d="M1030,171 L1030,187" stroke="#bf413b" stroke-width="1" fill="none"/>
+<path d="M1021,187 L1039,187" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M1021,193 L1039,193" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M1030,193 L1030,211" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M1030,211 L1030,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M1022,218 L1038,218" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M1025,222 L1035,222" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M1028,226 L1032,226" stroke="#19332e" stroke-width="1" fill="none"/>
+<text x="1005" y="240.65" fill="#19332e" font-size="9" font-family="Microsoft YaHei, sans-serif">C6 100nF</text>
+<text x="462" y="266.65" fill="#65766e" font-size="9" font-family="Microsoft YaHei, sans-serif">电源入口</text>
+<text x="681" y="266.65" fill="#65766e" font-size="9" font-family="Microsoft YaHei, sans-serif">C3/C4 靠近 J2</text>
+<text x="942" y="266.65" fill="#65766e" font-size="9" font-family="Microsoft YaHei, sans-serif">C5/C6 靠近 J3</text>
+<text x="35" y="296.35" fill="#a9620c" font-size="11" font-family="Microsoft YaHei, sans-serif">所有 GND 同网。3.3 V 电流能力取决于你现有开发板的稳压器，制板前需确认型号及负载；底板不新增稳压器。</text>
+<rect x="46" y="318" width="183" height="470" rx="7" fill="#ffffff" stroke="#287660"/>
+<text x="60" y="340.05" fill="#19332e" font-size="13" font-family="Microsoft YaHei, sans-serif">U1 现有 ESP32-S3</text>
+<text x="60" y="355.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">N8R8 开发板</text>
+<text x="60" y="609.5" fill="#a9620c" font-size="10" font-family="Microsoft YaHei, sans-serif">仅逻辑符号</text>
+<text x="60" y="631.65" fill="#65766e" font-size="9" font-family="Microsoft YaHei, sans-serif">J1A / J1B 为两排母座</text>
+<text x="60" y="654.65" fill="#65766e" font-size="9" font-family="Microsoft YaHei, sans-serif">N、针序、两排间距待实测</text>
+<rect x="810" y="318" width="344" height="377" rx="7" fill="#ffffff" stroke="#287660"/>
+<text x="828" y="340.05" fill="#19332e" font-size="13" font-family="Microsoft YaHei, sans-serif">J2 屏幕转接接口 / 2×5 简牛</text>
+<text x="148" y="367.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">GPIO12</text>
+<path d="M229,371 L435,371" stroke="#2167aa" stroke-width="1" fill="none"/>
+<rect x="435" y="366" width="48" height="10" rx="0" fill="#ffffff" stroke="#2167aa"/>
+<text x="434" y="352.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">R1 33Ω</text>
+<path d="M483,371 L810,371" stroke="#2167aa" stroke-width="1" fill="none"/>
+<text x="826" y="371.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">3  SCK</text>
+<text x="148" y="405.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">GPIO11</text>
+<path d="M229,409 L435,409" stroke="#2167aa" stroke-width="1" fill="none"/>
+<rect x="435" y="404" width="48" height="10" rx="0" fill="#ffffff" stroke="#2167aa"/>
+<text x="434" y="390.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">R2 33Ω</text>
+<path d="M483,409 L810,409" stroke="#2167aa" stroke-width="1" fill="none"/>
+<text x="826" y="409.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">5  SDI / MOSI</text>
+<text x="148" y="443.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">GPIO10</text>
+<path d="M229,447 L435,447" stroke="#2167aa" stroke-width="1" fill="none"/>
+<rect x="435" y="442" width="48" height="10" rx="0" fill="#ffffff" stroke="#2167aa"/>
+<text x="434" y="428.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">R3 0Ω</text>
+<path d="M483,447 L810,447" stroke="#2167aa" stroke-width="1" fill="none"/>
+<text x="826" y="447.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">7  CS</text>
+<text x="148" y="481.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">GPIO9</text>
+<path d="M229,485 L435,485" stroke="#2167aa" stroke-width="1" fill="none"/>
+<rect x="435" y="480" width="48" height="10" rx="0" fill="#ffffff" stroke="#2167aa"/>
+<text x="434" y="466.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">R4 0Ω</text>
+<path d="M483,485 L810,485" stroke="#2167aa" stroke-width="1" fill="none"/>
+<text x="826" y="485.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">6  D/C</text>
+<text x="148" y="519.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">GPIO14</text>
+<path d="M229,523 L435,523" stroke="#2167aa" stroke-width="1" fill="none"/>
+<rect x="435" y="518" width="48" height="10" rx="0" fill="#ffffff" stroke="#2167aa"/>
+<text x="434" y="504.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">R5 0Ω</text>
+<path d="M483,523 L810,523" stroke="#2167aa" stroke-width="1" fill="none"/>
+<text x="826" y="523.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">8  RESET</text>
+<text x="148" y="557.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">GPIO15</text>
+<path d="M229,561 L435,561" stroke="#2167aa" stroke-width="1" fill="none"/>
+<rect x="435" y="556" width="48" height="10" rx="0" fill="#ffffff" stroke="#2167aa"/>
+<text x="434" y="542.5" fill="#2167aa" font-size="10" font-family="Microsoft YaHei, sans-serif">R6 0Ω</text>
+<path d="M483,561 L810,561" stroke="#2167aa" stroke-width="1" fill="none"/>
+<text x="826" y="561.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">10 SDO / MISO</text>
+<text x="264" y="590.5" fill="#65766e" font-size="10" font-family="Microsoft YaHei, sans-serif">R1/R2 靠 U1；R6 靠 J2（SDO 输出端）。</text>
+<path d="M655,601 L810,601" stroke="#bf413b" stroke-width="1" fill="none"/>
+<text x="633" y="592.5" fill="#bf413b" font-size="10" font-family="Microsoft YaHei, sans-serif">+3V3_PERIPH</text>
+<text x="826" y="601.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">2  VCC（3.3 V）</text>
+<path d="M655,601 L655,641" stroke="#bf413b" stroke-width="1" fill="none"/>
+<circle cx="655" cy="601" r="2.4" fill="#bf413b"/>
+<path d="M655,641 L701,641" stroke="#bf413b" stroke-width="1" fill="none"/>
+<rect x="701" y="636" width="48" height="10" rx="0" fill="#ffffff" stroke="#bf413b"/>
+<text x="700" y="622.5" fill="#bf413b" font-size="10" font-family="Microsoft YaHei, sans-serif">R7 0Ω</text>
+<path d="M749,641 L810,641" stroke="#bf413b" stroke-width="1" fill="none"/>
+<text x="826" y="641.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">9  LED / BL（固定供电）</text>
+<text x="264" y="627.5" fill="#a9620c" font-size="10" font-family="Microsoft YaHei, sans-serif">R7 仅作背光隔离 / 测流跳线，不是限流器。</text>
+<text x="264" y="646.5" fill="#a9620c" font-size="10" font-family="Microsoft YaHei, sans-serif">仅连接现有屏幕模块的背光输入；不可直接接裸 LED。</text>
+<path d="M750,676 L810,676" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M750,676 L750,683" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M742,683 L758,683" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M745,687 L755,687" stroke="#19332e" stroke-width="1" fill="none"/>
+<path d="M748,691 L752,691" stroke="#19332e" stroke-width="1" fill="none"/>
+<text x="826" y="675.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">1、4  GND（都要接）</text>
+<text x="263" y="693.5" fill="#a9620c" font-size="10" font-family="Microsoft YaHei, sans-serif">J2 针序由本底板定义，不能直接套用屏幕原排针顺序。</text>
+<rect x="810" y="710" width="344" height="88" rx="6" fill="#ffffff" stroke="#287660"/>
+<text x="827" y="727.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">J3 / XH-4，2.50 mm，ATGM336H</text>
+<text x="827" y="749.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">1  VCC ← +3V3_PERIPH    2  GND</text>
+<text x="827" y="771.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">3  GPS TX → GPIO17      4  GPS RX：NC</text>
+<text x="60" y="762.5" fill="#287660" font-size="10" font-family="Microsoft YaHei, sans-serif">GPIO17 / UART RX</text>
+<path d="M229,765 L435,765" stroke="#287660" stroke-width="1" fill="none"/>
+<rect x="435" y="760" width="48" height="10" rx="0" fill="#ffffff" stroke="#287660"/>
+<text x="434" y="746.5" fill="#287660" font-size="10" font-family="Microsoft YaHei, sans-serif">R8 1kΩ</text>
+<path d="M483,765 L810,765" stroke="#287660" stroke-width="1" fill="none"/>
+<circle cx="330" cy="765" r="2.4" fill="#287660"/>
+<path d="M330,765 L330,783" stroke="#287660" stroke-width="1" fill="none"/>
+<text x="342" y="786.65" fill="#19332e" font-size="9" font-family="Microsoft YaHei, sans-serif">TP4</text>
+<text x="264" y="712.5" fill="#65766e" font-size="10" font-family="Microsoft YaHei, sans-serif">GPS 天线和射频线继续沿用原模块，不在底板重画射频。</text>
+<text x="264" y="730.5" fill="#65766e" font-size="10" font-family="Microsoft YaHei, sans-serif">GPS RX / PPS 不连接；当前固件 UART RX=17、TX=-1。</text>
+</svg>

@@ -1,0 +1,263 @@
+{
+  "confirmed_date": "2026-10-19",
+  "carrier_type": "existing_dev_board_socket_carrier",
+  "header_pitch_mm": 2.54,
+  "pins_per_single_row": 22,
+  "single_row_socket_count": 2,
+  "row_center_distance_mm": 25.4,
+  "mechanical_confirmation_date": "2026-10-20",
+  "mechanical_evidence": "User supplied 25.40 and dimensional drawing D:/Downloads/IMG_2206.JPG; not independently measured",
+  "header_first_to_last_pin_span_mm": 53.34,
+  "pcb_socket_spacing_evidence": {
+    "date": "2026-10-20",
+    "source": "User supplied PCB measurement screenshot",
+    "left_measurement_point_mil": [
+      60,
+      -70
+    ],
+    "right_measurement_point_mil": [
+      1060,
+      -70
+    ],
+    "dx_mm": 25.4,
+    "dy_mm": 0,
+    "pin_1_orientation": "Both square pads marked 1 visible at top",
+    "first_to_last_span_checked_on_pcb": false,
+    "notes": "Measurement confirms row spacing. Does not confirm hole diameter, footprint pin numbering/net assignment or physical fit."
+  },
+  "dev_board_width_mm_from_drawing": 27.94,
+  "dev_board_body_length_mm_excluding_antenna_from_drawing": 57.15,
+  "physical_header_pin_mapping": {
+    "evidence": [
+      "D:/Downloads/IMG_2199.JPG",
+      "D:/Downloads/IMG_2196.JPG"
+    ],
+    "status": "Transcribed from front/back silkscreen photos; continuity and PCB footprint orientation not yet checked",
+    "view": "Component side facing viewer, antenna at top, USB connectors at bottom; carrier viewed from its top with board installed",
+    "numbering": "Both socket pin 1 positions are at antenna end; pins increase toward USB end",
+    "J1A_front_left_top_to_bottom": [
+      "3V3",
+      "3V3",
+      "RST",
+      "GPIO4",
+      "GPIO5",
+      "GPIO6",
+      "GPIO7",
+      "GPIO15",
+      "GPIO16",
+      "GPIO17",
+      "GPIO18",
+      "GPIO8",
+      "GPIO3",
+      "GPIO46",
+      "GPIO9",
+      "GPIO10",
+      "GPIO11",
+      "GPIO12",
+      "GPIO13",
+      "GPIO14",
+      "5V",
+      "GND"
+    ],
+    "J1B_front_right_top_to_bottom": [
+      "GND",
+      "TX",
+      "RX",
+      "GPIO1",
+      "GPIO2",
+      "GPIO42",
+      "GPIO41",
+      "GPIO40",
+      "GPIO39",
+      "GPIO38",
+      "GPIO37",
+      "GPIO36",
+      "GPIO35",
+      "GPIO0",
+      "GPIO45",
+      "GPIO48",
+      "GPIO47",
+      "GPIO21",
+      "GPIO20",
+      "GPIO19",
+      "GND",
+      "GND"
+    ]
+  },
+  "proposed_carrier_outline": {
+    "status": "Drawn in user EDA; type board outline, start (-450,5) mil, width3150 height2450 confirmed from 2026-10-20 screenshot; fit not yet tested",
+    "date": "2026-10-20",
+    "assumes_socket_pin1_positions_mil": [
+      [
+        60,
+        -70
+      ],
+      [
+        1060,
+        -70
+      ]
+    ],
+    "left_x_mil": -450,
+    "right_x_mil": 2700,
+    "top_y_mil": 5,
+    "bottom_y_mil": -2445,
+    "width_mm": 80.01,
+    "height_mm": 62.23,
+    "notes": "Top edge aligns to estimated dev-board body edge, 75mil above first pin per supplied dimension drawing, allowing antenna to protrude. Socket body clearance, connector plug space, mounting holes and actual fit still require review."
+  },
+  "proposed_mounting_holes": {
+    "status": "Proposed generic carrier mounting positions; not matched to an existing enclosure or screen",
+    "hole_type": "Non-plated through hole via circular slot region in EasyEDA Pro",
+    "diameter_mil": 126,
+    "diameter_mm_approx": 3.2004,
+    "fastener": "M3 nylon screw and standoff for prototype",
+    "center_positions_mil": [
+      [
+        -250,
+        -195
+      ],
+      [
+        2500,
+        -195
+      ],
+      [
+        -250,
+        -2245
+      ],
+      [
+        2500,
+        -2245
+      ]
+    ],
+    "center_to_nearest_board_edges_mil": 200,
+    "assembly_clearance_circle_diameter_mil": 300,
+    "clearance_status": "Visually proposed from screenshots; check actual components and copper keepouts before fabrication"
+  },
+  "latest_layout_review": {
+    "date": "2026-10-20",
+    "evidence": "User screenshot at 17:46 Asia/Shanghai; requested to retain current layout",
+    "description": "J1 middle and J4 right, both 22-pin sockets; J2/J3/JP1 to left outside socket pair; screen resistors between J1 and J2",
+    "socket_absolute_positions_changed": true,
+    "old_pin1_coordinates_still_applicable": false,
+    "antenna_clearance_with_current_outline": "Not confirmed; socket movement invalidates previous top-edge alignment assumption",
+    "connectivity": "Target pin/net mapping unchanged; screenshot is not a PCB netlist or DRC verification"
+  },
+  "next_stage": "Outdoor GPS FIX check and phone BLE navigation validation; electrical voltage and solder quality remain physically unmeasured.",
+  "exported_project_review": {
+    "date": "2026-10-20",
+    "source_file": "ProPrj_电动车转接板10.19_2026-10-20.epro2",
+    "sha256": "afb68e4178c7e5a15f5eface6b83714e48bd816d611618044108ac6d2d4c1151",
+    "original_modified": false,
+    "method": "Read-only exported geometry/net inspection; not native EDA full DRC or physical verification",
+    "socket_pin1_mil": {
+      "J1": [
+        1017.8128,
+        -218.5312
+      ],
+      "J4": [
+        2017.8128,
+        -218.5312
+      ]
+    },
+    "row_spacing_mm": 25.4,
+    "pin1_to_22_mm": 53.34,
+    "named_nets_connected": 18,
+    "pad_net_mapping_matches_target": true,
+    "top_and_bottom_pour_net": "GND",
+    "all_trace_width_mil": 10,
+    "antenna_keepout_present": false,
+    "board_outline_mil": [
+      [
+        -450,
+        -2445
+      ],
+      [
+        -450,
+        5
+      ],
+      [
+        2685,
+        -5
+      ],
+      [
+        2700,
+        -2445
+      ]
+    ],
+    "findings": [
+      "Antenna projection needs mechanical confirmation; potential ~3.7mm carrier overlap based on prior supplied drawing",
+      "Decoupling capacitors 26.6-49.6mm straight-line from intended power connection points",
+      "Power/backlight long trunks still10mil; widen open sections with clearance-aware rerouting",
+      "Board top/right edges slightly skewed compared with intended rectangle",
+      "All SMD R/C paste expansion -3937mil; restore for stencil/SMT if used"
+    ],
+    "report": "output/carrier_v01/project_audit/工程检查报告.md"
+  },
+  "assembly_preference": {
+    "date": "2026-10-20",
+    "source": "User explicitly stated bare PCB fabrication only, personally purchasing and hand-soldering components, minimize cost",
+    "pcb_service": "bare_board_only",
+    "assembly": "user_hand_solder",
+    "smt_service": false,
+    "stencil_required": false,
+    "antenna_clearance_for_next_steps": "assumed satisfied at user request; not physically verified",
+    "notes": "Do not require restoring paste apertures for this hand-solder-only workflow. Preserve solder-mask openings and all electrical checks."
+  },
+  "enclosure_planning": {
+    "date": "2026-10-20",
+    "user_intent": "Fit existing 4.0inch display and carrier into one economical 3D-printed enclosure; guide hand-soldering and wiring after delivery",
+    "status": "Preliminary only; display module outline, mounting holes and mated connector heights not supplied",
+    "carrier_reference_envelope_mm": [
+      80.01,
+      62.23,
+      1.6
+    ],
+    "display_nominal_diagonal_mm": 101.6,
+    "display_3to2_visible_area_estimate_mm": [
+      84.54,
+      56.36
+    ],
+    "display_estimate_not_module_outline": true,
+    "proposed_arrangement": "Display at front, carrier with installed ESP32 behind, short harness at one edge, USB power bank outside enclosure unless user requests otherwise",
+    "must_include": [
+      "ESP32 installed height above socket",
+      "J2/J3 mated plugs and wire bends",
+      "Underside solder tails and insulation gap",
+      "Display rear components and connectors",
+      "GPS module and original antenna/lead route",
+      "USB plug insertion route",
+      "PCB antenna clearance from display metal backplate",
+      "Independent mounting posts; no pressure on display glass"
+    ],
+    "next_action": "Measure display complete module and trial stack/1:1 paper templates before final enclosure dimensions or full print; export current assembly STEP for later CAD collision checks",
+    "printing_strategy": "Print a thin positioning frame or hole template first, then full enclosure after fit checks"
+  },
+  "assembled_hardware_test": {
+    "date": "2026-10-27",
+    "port": "COM7",
+    "firmware_reflashed": false,
+    "visual_demo": "User confirmed normal road, route, Chinese and speed display, no observed corruption/flicker",
+    "gps_environment": "indoor desk, user confirmed",
+    "gps_first_sample": [
+      900,
+      0,
+      0,
+      4294967295
+    ],
+    "gps_last_sample": [
+      155484,
+      0,
+      0,
+      4294967295
+    ],
+    "gps_valid_fix_seen": false,
+    "gps_used_satellites_max": 0,
+    "known_fault_markers_seen": [],
+    "limitations": [
+      "No measured 3V3 voltage/ripple or solder-joint continuity check",
+      "No outdoor GPS FIX validation",
+      "No actual Android phone connection or live navigation validation in this run",
+      "Bench DEMO is public test data, not real-time vehicle position"
+    ]
+  }
+}

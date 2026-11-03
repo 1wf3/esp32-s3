@@ -1,0 +1,10 @@
+{
+  "pages": 4,
+  "connector_pins": 20,
+  "bom_rows": 21,
+  "matches_current_firmware_gpio": true,
+  "pdf_rendered_and_visually_reviewed": true,
+  "mechanical_footprints_frozen": false,
+  "eda_erc_drc_done": false,
+  "pcb_built_or_tested": false
+}

@@ -1,0 +1,33 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('path');
+const root=path.resolve(__dirname,'../..');
+const html=fs.readFileSync(path.join(root,'output/previews/手机导航实机调试.html'),'utf8');
+assert(!html.includes('__DEMO_FIXTURE__'));
+const core=html.match(/<script id="nav-core">([\s\S]*?)<\/script>/)[1];
+const app=html.match(/<script id="nav-app">([\s\S]*?)<\/script>/)[1];
+new vm.Script(core);new vm.Script(app);
+const context=vm.createContext({TextEncoder,Uint8Array,DataView,Math,Date});vm.runInContext(core,context);
+const {Core,Reassembler,RouteModel}=context.NavCore;
+const golden=Object.fromEntries(fs.readFileSync(path.join(root,'software/phone_ble_nav/tests/ble-navigation-v1.golden.txt'),'utf8').split(/\r?\n/).filter(l=>l.includes('=')&&!l.startsWith('#')).map(l=>l.split('=')));
+const hex=s=>Uint8Array.from(Buffer.from(s,'hex'));
+const equals=(a,b)=>assert.strictEqual(Buffer.from(a).toString('hex'),Buffer.from(b).toString('hex'));
+equals(Core.connection(1,0x12345678,185,127,1000),hex(golden['connection.payload']));
+equals(Core.frames(1,1,hex(golden['connection.payload']),185)[0],hex(golden['connection.frame']));
+assert.strictEqual(Core.crc(new TextEncoder().encode('123456789')),0x29b1);
+const command=hex(golden['command.payload']),frames=Core.frames(0x20,0x1234,command,20,12),expected=golden['command.frames20'].split(';');
+frames.forEach((f,i)=>equals(f,hex(expected[i])));
+let r=new Reassembler(),message;frames.forEach((f,i)=>{message=r.push(f,10+i)});equals(message.payload,command);
+const broken=frames[0].slice();broken[broken.length-1]^=1;assert.throws(()=>new Reassembler().push(broken,0));
+assert.throws(()=>new Reassembler().push(frames[1],0));r=new Reassembler();r.push(frames[0],0);assert.throws(()=>r.push(frames[1],1001));
+const g=hex(golden['geometry.payload']),v=new DataView(g.buffer),origin=[v.getInt32(22,true)/1e6,v.getInt32(18,true)/1e6];let lat=v.getInt32(27,true),lon=v.getInt32(31,true),at=35;
+const points=[[lon/1e6,lat/1e6]];
+function signed(){let x=0,shift=0,b;do{b=g[at++];x|=(b&127)<<shift;shift+=7}while(b&128);return(x>>>1)^-(x&1)}
+while(at<g.length){lat+=signed();lon+=signed();points.push([lon/1e6,lat/1e6])}
+equals(Core.geometry(v.getUint32(2,true),v.getUint32(6,true),origin,points),g);
+assert(Core.gcj(116.397389,39.908722)[0]>116.4036);
+const route=new RouteModel({provider:'amap',route_id:'test',coordinate_system:'GCJ-02',total_distance_m:111,total_duration_s:30,polyline:[{longitude_deg:112,latitude_deg:34},{longitude_deg:112,latitude_deg:34.001}],maneuvers:[{id:1,type:'arrive',route_offset_m:111}]});
+const snap=route.snapshot({valid:true,gcj:[112,34.0005],at:Date.now(),accuracy:5,speed:2,heading:0});
+assert(snap.flags&2);assert(Math.abs(snap.progress-55)<2);
+const stale=route.snapshot({valid:true,gcj:[112,34.0009],at:Date.now()-20000,accuracy:5,speed:2,heading:0});
+assert(stale.flags&4);assert(!(stale.flags&2));assert.strictEqual(stale.progress,snap.progress);
+assert.throws(()=>new RouteModel({coordinate_system:'WGS84',polyline:[]}));
+console.log('HTML syntax / BLE golden / coordinate / stale-position checks passed.');

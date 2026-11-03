@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1191" height="842" viewBox="0 0 1191 842">
+<rect x="0" y="0" width="1191" height="842" rx="0" fill="#f7f8f3" stroke="#f7f8f3"/>
+<text x="34" y="43.25" fill="#19332e" font-size="25" font-family="Microsoft YaHei, sans-serif">04 / 物料、上电核验与资料依据</text>
+<text x="35" y="69.35" fill="#65766e" font-size="11" font-family="Microsoft YaHei, sans-serif">物料按规格搜索并匹配所购料封装；未虚构嘉立创商城编号、现货状态或价格。</text>
+<path d="M34,83 L1157,83" stroke="#287660" stroke-width="2" fill="none"/>
+<text x="35" y="822.65" fill="#65766e" font-size="9" font-family="Microsoft YaHei, sans-serif">电动车导航 / 2026-10-19 / V0.1 电气设计草案；封装未冻结，不可据此直接下单 PCB</text>
+<text x="1080" y="823.5" fill="#65766e" font-size="10" font-family="Microsoft YaHei, sans-serif">4 / 4</text>
+<text x="37" y="117.75" fill="#287660" font-size="15" font-family="Microsoft YaHei, sans-serif">新购核心物料（已有开发板 / 屏幕 / GPS 不重复采购）</text>
+<rect x="37" y="134" width="754" height="26" rx="0" fill="#287660" stroke="#287660"/>
+<text x="45" y="150.5" fill="#ffffff" font-size="10" font-family="Microsoft YaHei, sans-serif">器件</text>
+<text x="225" y="150.5" fill="#ffffff" font-size="10" font-family="Microsoft YaHei, sans-serif">数量</text>
+<text x="290" y="150.5" fill="#ffffff" font-size="10" font-family="Microsoft YaHei, sans-serif">规格 / 说明</text>
+<rect x="37" y="160" width="754" height="26" rx="0" fill="#ffffff" stroke="#dce4da"/>
+<text x="45" y="176.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">排母 / J1A,J1B</text>
+<text x="225" y="176.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">2条</text>
+<text x="290" y="176.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">每排 N 脚 / 针距及两排中心距按实物</text>
+<rect x="37" y="186" width="754" height="26" rx="0" fill="#eef2eb" stroke="#dce4da"/>
+<text x="45" y="202.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">J2及线束</text>
+<text x="225" y="202.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">1套</text>
+<text x="290" y="202.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">2×5 / 2.54 mm 防呆简牛 + 配套 10 芯排线</text>
+<rect x="37" y="212" width="754" height="26" rx="0" fill="#ffffff" stroke="#dce4da"/>
+<text x="45" y="228.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">J3及线束</text>
+<text x="225" y="228.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">1套</text>
+<text x="290" y="228.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">XH-4 / 2.50 mm；GPS RX 位置留空</text>
+<rect x="37" y="238" width="754" height="26" rx="0" fill="#eef2eb" stroke="#dce4da"/>
+<text x="45" y="254.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">JP1</text>
+<text x="225" y="254.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">1套</text>
+<text x="290" y="254.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">2.54 mm 两针排针 + 短路帽</text>
+<rect x="37" y="264" width="754" height="26" rx="0" fill="#ffffff" stroke="#dce4da"/>
+<text x="45" y="280.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">33Ω / 0805</text>
+<text x="225" y="280.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">2颗</text>
+<text x="290" y="280.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">R1/R2；建议多备少量 22Ω 和 0Ω</text>
+<rect x="37" y="290" width="754" height="26" rx="0" fill="#eef2eb" stroke="#dce4da"/>
+<text x="45" y="306.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">0Ω / 0805</text>
+<text x="225" y="306.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">5颗</text>
+<text x="290" y="306.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">R3~R7；背光支路不是限流设计</text>
+<rect x="37" y="316" width="754" height="26" rx="0" fill="#ffffff" stroke="#dce4da"/>
+<text x="45" y="332.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">1kΩ / 0805</text>
+<text x="225" y="332.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">1颗</text>
+<text x="290" y="332.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">R8，GPS TX 串联</text>
+<rect x="37" y="342" width="754" height="26" rx="0" fill="#eef2eb" stroke="#dce4da"/>
+<text x="45" y="358.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">10uF / 0805</text>
+<text x="225" y="358.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">3颗</text>
+<text x="290" y="358.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">C1/C3/C5，≥10 V，X7R，有效容量需核对</text>
+<rect x="37" y="368" width="754" height="26" rx="0" fill="#ffffff" stroke="#dce4da"/>
+<text x="45" y="384.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">100nF / 0805</text>
+<text x="225" y="384.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">3颗</text>
+<text x="290" y="384.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">C2/C4/C6，≥16 V，X7R</text>
+<rect x="37" y="394" width="754" height="26" rx="0" fill="#eef2eb" stroke="#dce4da"/>
+<text x="45" y="410.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">M3 固定件</text>
+<text x="225" y="410.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">4套</text>
+<text x="290" y="410.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">孔 / 高度随屏幕、外壳定版</text>
+<text x="41" y="436.5" fill="#65766e" font-size="10" font-family="Microsoft YaHei, sans-serif">完整 BOM CSV 另列已有物料、PCB、测试点与可选触摸件。建议小量备损耗，勿按图示比例采购封装。</text>
+<text x="37" y="477.75" fill="#287660" font-size="15" font-family="Microsoft YaHei, sans-serif">焊接与首次上电顺序</text>
+<text x="38" y="506.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">1. 未插开发板 / 屏幕 / GPS 时，逐脚通断核对 J2/J3 和网络表，检查相邻脚无短路。</text>
+<text x="38" y="532.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">2. 检查 J1A/J1B：从元件面按实物编号，核对 3V3、GND、GPIO，不能左右镜像。</text>
+<text x="38" y="558.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">3. 拔下 JP1；只插开发板并接 USB，先测 TP1 的 DEV_3V3。断电后安装其余模块。</text>
+<text x="38" y="584.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">4. 接好 JP1，再上电测 TP2、屏幕 VCC/LED、GPS VCC；观察启动 / 蓝牙 / NMEA。</text>
+<text x="38" y="610.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">5. 测稳压器型号、总负载与发热；底板增加去耦不能弥补 LDO 供电能力不足。</text>
+<text x="38" y="636.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">6. 做显示、蓝牙和 GPS 联调后再固定外壳；外出搜星时天线朝天，轻拉线束不松脱。</text>
+<text x="839" y="118.75" fill="#287660" font-size="15" font-family="Microsoft YaHei, sans-serif">本版边界</text>
+<text x="839" y="146.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">只做现成模块的连接 / 固定底板。</text>
+<text x="839" y="171.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">不更换 MCU、不重画 USB / RF。</text>
+<text x="839" y="196.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">不设计锂电充电或车载降压。</text>
+<text x="839" y="221.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">不接车辆 12/24/48/60/72 V。</text>
+<text x="839" y="246.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">不增加电量、鸣笛或亮度控制。</text>
+<text x="839" y="271.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif"></text>
+<text x="839" y="296.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">电气关系可照图绘制；</text>
+<text x="839" y="321.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">封装与机械尺寸必须补测。</text>
+<text x="839" y="401.75" fill="#287660" font-size="15" font-family="Microsoft YaHei, sans-serif">嘉立创 EDA 选件检查</text>
+<text x="839" y="429.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">符号脚号 = 封装焊盘号。</text>
+<text x="839" y="454.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">XH 是 2.50 mm，需匹配系列。</text>
+<text x="839" y="479.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">简牛的缺口方向不等于针序确认。</text>
+<text x="839" y="504.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">排母高度要避开底部元件。</text>
+<text x="839" y="529.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">所有线束都做 1脚 / 电压丝印。</text>
+<text x="839" y="554.35" fill="#19332e" font-size="11" font-family="Microsoft YaHei, sans-serif">GPS 插反会把电源接错，先断电核线。</text>
+<text x="38" y="690.75" fill="#287660" font-size="15" font-family="Microsoft YaHei, sans-serif">依据与复核范围</text>
+<text x="39" y="718.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">已核对项目源码：software/phone_ble_nav/phone_ble_nav.ino；历史大屏及 GNSS 接线记录。</text>
+<text x="39" y="740.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">Espressif：DevKitC-1 供电指南、ESP32-S3 PCB 布局与天线净空指南；仅作通用参考，不证明你的克隆板封装相同。</text>
+<text x="39" y="762.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">中科微：ATGM336H-5N 产品资料；裸模块为 2.7~3.6 V，现成 GPS 转接板仍应按实物资料核对。</text>
+<text x="39" y="784.5" fill="#19332e" font-size="10" font-family="Microsoft YaHei, sans-serif">官方网页链接及可复制的逐针网络表，见同目录《嘉立创绘制说明.md》。本版未在 EDA 中完成 ERC / DRC。</text>
+</svg>
