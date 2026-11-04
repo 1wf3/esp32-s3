@@ -18,7 +18,7 @@
 | `output/carrier_v01/`、`output/pdf/` | 硬件图纸、BOM 和接口资料 |
 | `output/previews/`、`output/navigation-concepts/` | 可公开的界面预览和概念设计 |
 
-`build/` 保存本地 SDK/JDK、蓝牙依赖及运行文件；`work/` 保存中间文件；`outputs/` 保存本次交付包。上述目录以及历史记录、密钥、签名文件、APK、固件和演示文稿均不进入 Git。现有脚本使用的 `output/` 路径继续沿用。
+
 
 ## 开始使用
 
@@ -64,12 +64,3 @@ node software/web_debug/test.cjs
 powershell -File software/android_nav/tests/test.ps1
 # C++ 协议测试需要 Visual Studio C++ 工具，先核对脚本中的安装路径
 cmd /c software\phone_ble_nav\tests\run_tests.cmd
-```
-
-网页测试读取已有 [手机导航预览](output/previews/手机导航实机调试.html)，也可用 `software/web_debug/build.ps1` 重新生成。本机带令牌的电脑调试页由服务启动时生成，不随仓库分发。
-
-## 发布到 GitHub
-
-源码包及 Git 提交范围均已排除本地凭据、签名文件、调试日志、编译产物与历史压缩包。操作见 [上传说明](docs/guides/GitHub上传说明.md)。
-
-保留第三方目录的 LICENSE、NOTICE 和 [第三方声明](software/phone_gateway/THIRD_PARTY_NOTICES.md)。上游 MOTO GPS 部分采用 PolyForm Noncommercial 1.0.0，相关部分需遵守原有非商业授权及署名要求。本项目尚未选择自有代码的开源许可证；公开仓库前请由项目作者决定授权方式。
